@@ -19,8 +19,9 @@ function displayUsers(users) {
             <h3>${user.name}</h3>
             <p>Email: ${user.email}</p>
             <p>Alamat: ${user.address.street}, ${user.address.city}</p>
-        `
-
+            <p>Phone: ${user.phone}</p>
+            <p>Company: ${user.company.name}</p>
+            `
         usersList.appendChild(userItem)
     })
 }
