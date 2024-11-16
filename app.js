@@ -1,13 +1,13 @@
 const apiUrl = 'https://jsonplaceholder.typicode.com/users'
 
-function fetchData() {
-    fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
+async function fetchData() {
+    try {
+        const response = await fetch(apiUrl)
+        const data = await response.json()
         displayUsers(data)
-    })
-    .catch(error => console.error('Error:', error))
+    } catch (error) {
+        console.log('Error:', error)
+    }
 }
 
 function displayUsers(users) {
