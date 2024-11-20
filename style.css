@@ -1,0 +1,42 @@
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.user-item {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 16px;
+    border-radius: 16px;
+    background-color: rgb(236, 184, 120);
+    padding: 16px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+.user-item p {
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.user-email {
+    font-size: 16px;
+}
+
+.user-phone {
+    font-size: 14px;
+}
+
+.user-company {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.user-address {
+    font-size: 12px;
+}

@@ -15,13 +15,14 @@ function displayUsers(users) {
     
     users.forEach(user => {
         const userItem = document.createElement('div')
+        userItem.classList.add('user-item')
         userItem.innerHTML = `
             <h3>${user.name}</h3>
-            <p>Email: ${user.email}</p>
-            <p>Alamat: ${user.address.street}, ${user.address.city}</p>
-            <p>Phone: ${user.phone}</p>
-            <p>Company: ${user.company.name}</p>
-            `
+            <p class="user-company">${user.company.name}</p>
+            <p class="user-email">${user.email}</p>
+            <p class="user-phone">${user.phone}</p>
+            <p class="user-address">${user.address.street}, ${user.address.city}</p>
+        `
         usersList.appendChild(userItem)
     })
 }
